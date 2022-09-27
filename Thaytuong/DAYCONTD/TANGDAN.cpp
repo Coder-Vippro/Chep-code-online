@@ -32,5 +32,9 @@ int main()
             kq=f[i];
     }
     cout<<kq;
+    //for(int i=1;i<=n;i++)
+    //{
+    //
+    //}
     return 0;
 }
