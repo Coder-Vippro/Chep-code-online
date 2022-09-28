@@ -6,6 +6,8 @@ string temp2;
 string kq;
 int main()
 {
+    freopen("XAU16.INP","r",stdin);
+    freopen("XAU16.OUT","w",stdout);
     getline(cin,s);
     for(int i=0;i<s.size();i++)
     {

@@ -21,7 +21,8 @@ string tong(string x,string k)
 string s;
 int main()
 {
-
+    freopen("XAU06.INP","r",stdin);
+    freopen("XAU06.OUT","w",stdout);
     string kq="";
     cin>>s;
     string temp;

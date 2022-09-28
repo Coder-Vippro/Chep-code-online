@@ -5,6 +5,8 @@ using namespace std;
 string s;
 int main()
 {
+    freopen("XAU12.INP","r",stdin);
+    freopen("XAU12.OUT","w",stdout);
     cin>>s;
     for(int i=0;i<s.size();i++)
     {

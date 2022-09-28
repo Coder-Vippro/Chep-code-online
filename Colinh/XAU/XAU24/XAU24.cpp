@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
+    freopen("XAU24.INP","r",stdin);
+    freopen("XAU24.OUT","w",stdout);
     string s;
     cin>>s;
     for(int i=0; i<s.size();i++)

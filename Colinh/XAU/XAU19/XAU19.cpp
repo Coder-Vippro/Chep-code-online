@@ -3,6 +3,8 @@ using namespace std;
 string s;
 int main()
 {
+    freopen("XAU19.INP","r",stdin);
+    freopen("XAU19.OUT","w",stdout);
     getline(cin,s);
     int n=s.size();
     for(int i=1;i<=n;i++)

@@ -12,6 +12,8 @@ bool kt(char s)
 }
 int main()
 {
+    freopen("XAU07.INP","r",stdin);
+    freopen("XAU07.OUT","w",stdout);
     getline(cin,s);
     for(int i=0;i<s.size();i++)
     {

@@ -5,6 +5,8 @@ string s,s1,s2;
 int n;
 int main()
 {
+    freopen("XAU10.INP","r",stdin);
+    freopen("XAU10.OUT","w",stdout);
     cin>>n>>s;
     int k=s.size();
     s1=s.substr(0,n);

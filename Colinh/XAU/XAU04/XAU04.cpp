@@ -1,10 +1,12 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #include <string>
 using namespace std;
 string s;
 int dem=0;
 int main()
 {
+    freopen("XAU04.INP","r",stdin);
+    freopen("XAU04.OUT","w",stdout);
     cin>>s;
     for(int i=0;i<s.size();i++)
     {

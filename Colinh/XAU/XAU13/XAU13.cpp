@@ -16,6 +16,8 @@ int numberMax(int n)
 }
 int main()
 {
+    freopen("XAU13.INP","r",stdin);
+    freopen("XAU13.OUT","w",stdout);
     int x;
     cin >> x;
     cout << numberMax(x);

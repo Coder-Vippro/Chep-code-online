@@ -3,8 +3,8 @@ using namespace std;
 string s;
 int main()
 {
-    //freopen("bai1.inp","r",stdin);
-    //freopen("bai1.out","w",stdout);
+    freopen("XAU05.inp","r",stdin);
+    freopen("XAU05.out","w",stdout);
     cin>>s;
     string s1=s;
     reverse(s.begin(),s.end());
