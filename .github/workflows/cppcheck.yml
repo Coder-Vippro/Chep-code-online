@@ -3,18 +3,19 @@ on: [push]
 
 jobs:
   build:
-    name: cppcheck-test
+    name: cpptest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
           
-      - name: cppcheck
+      - name: Code-Checker
         uses: deep5050/cppcheck-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           force_language: c++
           enable: missingInclude
-          exclude_check: ./GiaHung, ./Codefun.vn
+          exclude_check: /GiaHung, /Codefun.vn, /HSG2021
+          
           
       - name: publish report    
         uses: mikeal/publish-to-github-action@master
