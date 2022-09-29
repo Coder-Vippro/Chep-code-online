@@ -14,7 +14,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           force_language: c++
           enable: missingInclude
-          exclude_check: /GiaHung, /Codefun.vn, /HSG2021
+          exclude_check: Chep-code-online/GiaHung
           
           
       - name: publish report    
