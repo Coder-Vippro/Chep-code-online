@@ -13,6 +13,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           force_language: c++
+          enable: all
+          exclude_check: workspace/GiaHung
           
       - name: publish report    
         uses: mikeal/publish-to-github-action@master
