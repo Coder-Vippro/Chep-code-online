@@ -688,6 +688,15 @@ BTVN/uocso/uocso.cpp:5:5: warning: Return value of function freopen() is not use
 BTVN/uocso/uocso.cpp:6:5: warning: Return value of function freopen() is not used. [ignoredReturnValue]
     freopen("uocso.OUT","w",stdout);
     ^
+Codefun.vn/P001/P001.cpp:6:10: error: Uninitialized variable: a [uninitvar]
+    cin>>a
+         ^
+Codefun.vn/P001/P001.cpp:6:10: error: Uninitialized variable: a  [uninitvar]
+    cin>>a
+         ^
+Codefun.vn/P001/P001.cpp:5:9: style: Variable 'a' is not assigned a value. [unassignedVariable]
+    int a;//nhập a
+        ^
 Codefun.vn/P012/P012.cpp:9:20: style: Local variable 'i' shadows outer variable [shadowVariable]
            for(int i=1;i<=m;i++)
                    ^
