@@ -58,33 +58,6 @@ BTVN/MISTAKE/MISTAKE.cpp:31:14: error: When i==b.size(), b[i] is out of bounds. 
 BTVN/MORPHER/MORPHER.cpp:14:14: error: Uninitialized variable: r [uninitvar]
         cin>>r>>
              ^
-Codefun.vn/P001/P001.cpp:6:10: error: Uninitialized variable: a [uninitvar]
-    cin>>a
-         ^
-Codefun.vn/P001/P001.cpp:6:10: error: Uninitialized variable: a  [uninitvar]
-    cin>>a
-         ^
-Codefun.vn/P002/P002.cpp:6:10: error: Uninitialized variable: a [uninitvar]
-    cin>>a>>b>>c
-         ^
-Codefun.vn/P002/P002.cpp:6:13: error: Uninitialized variable: b [uninitvar]
-    cin>>a>>b>>c
-            ^
-Codefun.vn/P002/P002.cpp:6:16: error: Uninitialized variable: c [uninitvar]
-    cin>>a>>b>>c
-               ^
-Codefun.vn/P002/P002.cpp:6:16: error: Uninitialized variable: c  [uninitvar]
-    cin>>a>>b>>c
-               ^
-Codefun.vn/P002/P002.cpp:7:12: error: Uninitialized variable: a [uninitvar]
-    cout<<(a-b)*c;
-           ^
-Codefun.vn/P002/P002.cpp:7:14: error: Uninitialized variable: b [uninitvar]
-    cout<<(a-b)*c;
-             ^
-Codefun.vn/P002/P002.cpp:7:17: error: Uninitialized variable: c [uninitvar]
-    cout<<(a-b)*c;
-                ^
 Codefun.vn/P062/P062.cpp:18:4: error: Unmatched '}'. Configuration: ''. [syntaxError]
    }
    ^
