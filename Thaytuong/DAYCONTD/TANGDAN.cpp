@@ -35,7 +35,7 @@ int main()
                 vt=i;
             }
     }
-    cout<<kq;
+    cout<<kq<<'\n';
 
     for(int i=kq-1;i>0;i--)
     {
