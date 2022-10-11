@@ -7,8 +7,8 @@ int maxx=0;
 int vt;
 int main()
 {
-    //freopen("DAYCON2.INP","r",stdin);
-    //freopen("DAYCON2.OUT","w",stdout);
+    freopen("DAYCON2.INP","r",stdin);
+    freopen("DAYCON2.OUT","w",stdout);
     long long n;
     long long k;
     n=1;
