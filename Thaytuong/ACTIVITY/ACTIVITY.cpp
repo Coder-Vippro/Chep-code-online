@@ -4,8 +4,8 @@ pair<int,pair<int,int> > a[10005];
 int f[10005],ma,vt;
 int main()
 {
-    freopen("ACTIVITY.inp","r",stdin);
-    freopen("ACTIVITY.out","w",stdout);
+    //freopen("ACTIVITY.inp","r",stdin);
+    //freopen("ACTIVITY.out","w",stdout);
     int n;cin>>n;
     for(int i=1;i<=n;i++)
     {

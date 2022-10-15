@@ -7,8 +7,8 @@ int maxx=0;
 int vt;
 int main()
 {
-    freopen("DAYCON2.INP","r",stdin);
-    freopen("DAYCON2.OUT","w",stdout);
+    //freopen("DAYCON2.INP","r",stdin);
+    //freopen("DAYCON2.OUT","w",stdout);
     long long n;
     long long k;
     n=1;
@@ -18,21 +18,19 @@ int main()
         n++;
     }
     f[1]=1;
+    maxx=0;
     for(int i=2;i<=n;i++)
     {
-        maxx=0;
         for(int j=1;j<=i;j++)
         {
-            if(a[i]>=a[j])
-            {
-                if(maxx<f[j])
+                if(maxx<f[j]a[i]==a[j]+2)
                     maxx=f[j];
-            }
         }
+
         f[i]=maxx+1;
     }
     int kq=f[1];
-    for(int i=2;i<=n;i++)
+    for(int i=1;i<=n;i++)
     {
         if(kq<f[i])
             {
@@ -40,11 +38,9 @@ int main()
                 vt=i;
             }
     }
-    cout<<kq<<'\n';
-
-    for(int i=kq-1;i>0;i--)
+    for(int i=kq-1;i>=1;i--)
     {
-        for(int i=vt-1;i>0;i--)
+        for(int j=vt-1;j>=1;j--)
         {
             vt=i;
             f[vt]=-f[vt];
