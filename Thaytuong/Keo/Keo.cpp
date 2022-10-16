@@ -1,39 +1,17 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-int A[10001];
-int B[10001];
-int n;
-bool trangthai=true;
-bool trangthai2=true;
+long long n,ma=0,sa[100005],sb[100005],a[100005],b[100005],s=0;
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
-    cin>>n;
-    for(int i=1;i<=n;i++)
-    {
-        cin>>A[i];
-    }
-    for(int i=1;i<=n;i++)
-    {
-        cin>>B[i];
-    }
-    int tong=A[1];
-    for(int i=2;i<=n;i++)
-    {
-        if(trangthai==true && trangthai2==true)
-        {
-            tong=tong+A[i];
-
-        }
-        if(A[i]>B[i-1] && A[i+1]>B[i])trangthai=true;
-        else if(A[i]+A[i+1]<B[i-1]+B[i])trangthai2=false;
-        if(trangthai2==false){tong=tong+B[i-1];}
-    }
-    if(trangthai2==true)tong=tong+B[n];
-    cout<<tong;
+    cin>>n;sa[0]=0;sb[n+1]=0;
+    for(long long i=1;i<=n;i++){cin>>a[i];sa[i]=sa[i-1]+a[i];}
+    for(long long i=1;i<=n;i++)cin>>b[i];
+    for(long long i=n;i>=1;i--){s=s+b[i];sb[i]=s;}
+    for(long long i=1;i<=n;i++)ma=max(ma,sa[i]+sb[i]);
+    cout<<ma;
     return 0;
 }
-
