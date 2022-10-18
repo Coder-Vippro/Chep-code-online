@@ -12,4 +12,5 @@ int main()
         cin>>k;
         cout<<7-k;
     }
+    
 }
