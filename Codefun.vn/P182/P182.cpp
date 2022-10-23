@@ -4,11 +4,11 @@ long long n;
 int main()
 {
     cin>>n;
-    long long tong=0;
-    for(int i=1;i<=n;i++)
+    if(n==1)
     {
-        if(i%2==0)
-        tong=tong+i;
+        cout<<0;
+        return 0;
     }
-    cout<<tong;
+    if(n%2==1)n=n-1;
+    cout<<((n-2)/2+1)/2*(n+2);
 }
