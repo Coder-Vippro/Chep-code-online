@@ -100,13 +100,49 @@ Colinh/XAU/XAU30/XAU30.cpp:38:11: error: Out of bounds access in expression 's1[
 Colinh/XAU/XAU30/XAU30.cpp:39:11: error: Out of bounds access in expression 's1[i]' because 's1' is empty. [containerOutOfBounds]
         s1[i].insert(s1.length(),l-i-1,'0');
           ^
-Contest/COPHIEU.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+class Solution {
+^
+Contest/Binarysearch.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+class Solution {
+^
+Contest/COPHIEU.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+class Solution {
+^
+Contest/LowestCommonAncestorofaBinarySearchTree.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+class Solution {
+^
+Contest/MaximumSubarray.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
 class Solution {
 ^
 Contest/palinrome.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/COPHIEU.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
 nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
