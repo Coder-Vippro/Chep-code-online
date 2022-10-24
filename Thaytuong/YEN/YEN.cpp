@@ -4,8 +4,8 @@ using namespace std;
 int n,k;
 int main()
 {
-    freopen("YEN.INP","r",stdin);
-    freopen("YEN.OUT","w",stdout);
+    //freopen("YEN.INP","r",stdin);
+    //freopen("YEN.OUT","w",stdout);
     cin>>n>>k;
     for(int i=0;i<=n;i++)
     {
