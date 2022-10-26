@@ -6,7 +6,7 @@ int x;
 int main()
 {
     freopen("MAXELEMENT.INP","r",stdin);
-    freopen("MAXELEMENT.INP","w",stdout);
+    freopen("MAXELEMENT.OUT","w",stdout);
     cin>>n;
     while(n--)
     {
