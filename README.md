@@ -1,3 +1,3 @@
+By @cauvang32 (Cậu Vàng#8013)
 
-By @cauvangdepzai1 (Cậu Vàng#8013) and @hungmagic-hub
 
