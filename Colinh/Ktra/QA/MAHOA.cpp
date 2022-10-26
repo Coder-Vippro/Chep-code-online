@@ -3,8 +3,8 @@ using namespace std;
 string s;
 int main()
 {
-    freopen("MAHOAKHACLOAI.INP","r",stdin);
-    freopen("MAHOAKHACLOAI.OUT","w",stdout);
+    freopen("MAHOA.INP","r",stdin);
+    freopen("MAHOA.OUT","w",stdout);
     cin>>s;
     for(int i=0;i<s.size();i++)
     {
