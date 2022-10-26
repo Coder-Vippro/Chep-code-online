@@ -139,6 +139,15 @@ class Solution {
 Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
 class Solution {
 ^
+Contest/Ransomnote.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+class Solution {
+^
 Contest/palinrome.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
