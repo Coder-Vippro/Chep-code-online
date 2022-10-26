@@ -4,8 +4,8 @@ string s;
 bool normal=false,num=false,shift=false;
 int main()
 {
-    //freopen("BAI4.INP","r",stdin);
-    //freopen("BAI4.OUT","w",stdout);
+    freopen("BAI4.INP","r",stdin);
+    freopen("BAI4.OUT","w",stdout);
     cin>>s;
     for(int i=0;i<s.size();i++)
     {
