@@ -2,5 +2,6 @@
 *.json
 /.vscode
 .vscode/tasks.json
-.vscode/c_cpp_properties.json
 .gitignore
+.vscode/c_cpp_properties.json
+
