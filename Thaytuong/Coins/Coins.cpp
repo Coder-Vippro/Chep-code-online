@@ -3,6 +3,8 @@ using namespace std;
 int A[4];
 int main()
 {
+    freopen("COINS.INP","r",stdin);
+    freopen("COINS.OUT","w",stdout);
     int h,k;
     cin>>h>>k;
     int n=3;
