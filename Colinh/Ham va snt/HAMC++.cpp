@@ -20,7 +20,7 @@ bool ktnt(int x) //kiem tra nt kieu cu
 {
     if(x<2)return false;
     if(x==2)return true;
-    for(int i=2;i*i<n=;i++)
+    for(int i=2;i*i<=n;i++)
     {
         if(x%i==0)
         return false;
