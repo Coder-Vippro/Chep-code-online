@@ -1,9 +1,9 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
-
+int n,m;
 int main()
 {
-    cout << "Hello world!" << endl;
+    cin>>n>>m;
     return 0;
 }
