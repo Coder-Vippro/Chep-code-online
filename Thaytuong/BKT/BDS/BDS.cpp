@@ -35,8 +35,8 @@ int main()
 {
     int n;
     cin>>n;
-    f[0]=0;
-    for(int i=1;i<=n;i++)
+    f[0]=0;f[1]=1;f[2]=1;f[3]=1;f[4]=1;f[5]=1;f[6]=1;f[7]=1;f[8]=1;f[9]=1;
+    for(int i=10;i<=n;i++)
     {
         Min=1e6;
         x=i;
