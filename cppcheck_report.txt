@@ -85,9 +85,6 @@ Codefun.vn/P123/P123.cpp:6:23: error: Array 'A[3]' accessed at index 3, which is
 Codefun.vn/P123/P123.cpp:8:23: error: Array 'A[3]' accessed at index 3, which is out of bounds. [arrayIndexOutOfBounds]
     cout<<A[1]<<' '<<A[3];
                       ^
-Colinh/Ham va snt/HAMC++.cpp:23:22: error: Syntax Error: AST broken, binary operator '=' doesn't have two operands. [internalAstError]
-    for(int i=2;i*i<n=;i++)
-                     ^
 Colinh/XAU/XAU17/XAU17.cpp:19:13: error: Array 'm[25]' accessed at index 25, which is out of bounds. [arrayIndexOutOfBounds]
         if(m[i]>0)
             ^
