@@ -38,14 +38,14 @@ int main()
     f[0]=0;f[1]=1;f[2]=1;f[3]=1;f[4]=1;f[5]=1;f[6]=1;f[7]=1;f[8]=1;f[9]=1;
     for(int i=10;i<=n;i++)
     {
-        Min=1e6;
+        f[i]=1e6;
         x=i;
         while(x>0)
         {
-            Min=min(Min,f[i-x%10]);
+            f[i]=min(f[i],f[i-x%10]);
             x=x/10;
         }
-        f[i]=Min+1;
+        f[i]=f[i]+1;
     }
     cout<<f[n];
 }
