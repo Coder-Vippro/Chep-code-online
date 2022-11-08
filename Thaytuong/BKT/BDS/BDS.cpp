@@ -29,8 +29,7 @@ int main()
 }*/
 #include <bits/stdc++.h>
 using namespace std;
-int f[100001];
-int Min,x;
+int f[1000001];
 int main()
 {
     int n;
@@ -39,7 +38,7 @@ int main()
     for(int i=10;i<=n;i++)
     {
         f[i]=1e6;
-        x=i;
+        int x=i;
         while(x>0)
         {
             f[i]=min(f[i],f[i-x%10]);
