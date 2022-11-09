@@ -1,0 +1,11 @@
+
+name: Merge pull requests (automerge-action)
+on: [pull_request_target]
+jobs:
+    greeting:
+      runs-on: ubuntu-latest
+      permissions:
+        issues: write
+        pull-requests: write
+      steps:
+      - uses: pascalgn/automerge-action@v0.15.5
