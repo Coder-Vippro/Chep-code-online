@@ -1,9 +1,8 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-int n,m;
+int A[100001][100001];
+int n;
 int main()
 {
-    cin>>n>>m;
-    return 0;
+    int i=1;
 }

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-int A[100001];
+int A[1000001];
 int maxchan=-1e9;
 int maxle=-1e9;
 int demchan=0;
