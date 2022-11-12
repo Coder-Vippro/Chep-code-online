@@ -1,3 +1,0 @@
-repository='https://github.com/Bareflank/GSL.git'
-module=''
-tag='origin'

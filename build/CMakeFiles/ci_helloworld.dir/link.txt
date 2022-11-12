@@ -1,1 +1,0 @@
-/usr/bin/clang++  -g   CMakeFiles/ci_helloworld.dir/src/main.cpp.o  -o ci_helloworld 

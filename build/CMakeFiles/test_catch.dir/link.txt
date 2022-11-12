@@ -1,2 +1,0 @@
-/usr/bin/ar qc libtest_catch.a  CMakeFiles/test_catch.dir/test/test.cpp.o
-/usr/bin/ranlib libtest_catch.a
