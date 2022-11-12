@@ -1,0 +1,3 @@
+repository='https://github.com/Bareflank/hippomocks.git'
+module=''
+tag='origin'

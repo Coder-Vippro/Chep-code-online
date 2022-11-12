@@ -1,0 +1,13 @@
+# Target labels
+ hippomocks
+# Source files and their labels
+/workspaces/Chep-code-online/build/CMakeFiles/hippomocks
+/workspaces/Chep-code-online/build/CMakeFiles/hippomocks.rule
+/workspaces/Chep-code-online/build/CMakeFiles/hippomocks-complete.rule
+/workspaces/Chep-code-online/build/external/hippomocks/stamp/hippomocks-install.rule
+/workspaces/Chep-code-online/build/external/hippomocks/stamp/hippomocks-mkdir.rule
+/workspaces/Chep-code-online/build/external/hippomocks/stamp/hippomocks-download.rule
+/workspaces/Chep-code-online/build/external/hippomocks/stamp/hippomocks-update.rule
+/workspaces/Chep-code-online/build/external/hippomocks/stamp/hippomocks-patch.rule
+/workspaces/Chep-code-online/build/external/hippomocks/stamp/hippomocks-configure.rule
+/workspaces/Chep-code-online/build/external/hippomocks/stamp/hippomocks-build.rule

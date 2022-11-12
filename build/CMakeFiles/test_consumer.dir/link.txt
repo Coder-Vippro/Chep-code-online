@@ -1,0 +1,1 @@
+/usr/bin/clang++  -g   CMakeFiles/test_consumer.dir/test/test_consumer.cpp.o  -o test_consumer  libtest_catch.a libbusiness_logic.a 

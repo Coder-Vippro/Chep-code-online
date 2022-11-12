@@ -1,0 +1,3 @@
+repository='https://github.com/Bareflank/catch.git'
+module=''
+tag='origin'
