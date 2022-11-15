@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 char a[1001][1001];
-long long f[1001][1001];
-long long n,m;
+int f[1001][1001];
+int n,m;
 const int MOD=1e9+7;
 int main()
 {
@@ -17,7 +17,12 @@ int main()
                 cin>>a[i][j];
             }
         }
-    f[1][1]=1;
+    if(a[1][1]=='*')
+    {
+        cout<<0;
+        return 0;
+    }
+    else f[1][1]=1;
     for(int j=2;j<=m;j++)
     {
         if(a[1][j]!=42)
