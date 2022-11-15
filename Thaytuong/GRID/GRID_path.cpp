@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-char a[1000][1000];
-long long f[1000][1000];
+char a[1001][1001];
+long long f[1001][1001];
 long long n,m;
 const int MOD=1e9+7;
 int main()
