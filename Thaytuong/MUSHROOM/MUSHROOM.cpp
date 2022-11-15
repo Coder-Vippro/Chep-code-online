@@ -74,6 +74,6 @@ int main()
                 if(a[i][j]==3) f3[i][j]=(f3[i-1][j]+f3[i][j-1])%MOD;else f3[i][j]==0;
             }
         }
-    cout<<f[n][m]-f1[n][m]-f2[n][m]-f3[n][m];
+    cout<<((f[n][m]-f1[n][m]+MOD)%MOD-f2[n][m]-f3[n][m]+MOD)%MOD;
     return 0;
 }
