@@ -12,10 +12,12 @@
         "unordered_map": "cpp",
         "unordered_set": "cpp",
         "vector": "cpp",
-        "forward_list": "cpp"
+        "forward_list": "cpp",
+        "tuple": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "git.ignoreLimitWarning": true,
     "discord-chat.token": "ODc4NTczODgxNDQ5OTA2MjA4.GuB0bv.1DbqR3RQMzMIlBkauFTheknGnZyg_dVzsYUNgE",
-    "discord-chat.setUpIfDiscordChaStartWhenVSCodeOpened": true
+    "discord-chat.setUpIfDiscordChaStartWhenVSCodeOpened": true,
+    "cmake.sourceDirectory": "${workspaceFolder}/configure"
 }
