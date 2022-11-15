@@ -5,8 +5,8 @@ int f[1000][1000];
 int n,m;
 int main()
 {
-    freopen("MOVE.inp","r",stdin);
-    freopen("MOVE.out","w",stdout);
+    freopen("GRID.inp","r",stdin);
+    freopen("GRID.out","w",stdout);
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
