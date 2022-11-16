@@ -97,6 +97,9 @@ Colinh/XAU/XAU30/XAU30.cpp:38:11: error: Out of bounds access in expression 's1[
 Colinh/XAU/XAU30/XAU30.cpp:39:11: error: Out of bounds access in expression 's1[i]' because 's1' is empty. [containerOutOfBounds]
         s1[i].insert(s1.length(),l-i-1,'0');
           ^
+Thaytuong/GRID/GRID_path.cpp:13:12: error: syntax error [syntaxError]
+    int m=n;
+           ^
 Thaytuong/MUSHROOM/t1.cpp:7:1: error: Unmatched '{'. Configuration: ''. [syntaxError]
 {
 ^
