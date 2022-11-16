@@ -3,8 +3,6 @@ using namespace std;
 int N[259],ma,x,le;
 int main()
 {
-    //freopen("sx.INP","r",stdin);
-    //freopen("sx.OUT","w",stdout);
     string s;cin>>s;
     fill(N,N+257,0);
     for(int i=0;i<s.size();i++){N[int(s[i])]++;ma=max(ma,int(s[i]));}
