@@ -2,10 +2,10 @@
 using namespace std;
 int a[1001][1001];
 int f[1001][1001];
-int n,m;
 int f1[1001][1001];
 int f2[1001][1001];
 int f3[1001][1001];
+int n,m;
 const int MOD=1e9+7;
 int main()
 {
