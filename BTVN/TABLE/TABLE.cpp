@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-float a,b,c,d,x,y,z,w,maxx;
+double a,b,c,d,x,y,z,w,maxx;
 int main()
 {
     //freopen("TABLE.INP", "r", stdin);
@@ -18,12 +18,12 @@ int main()
         maxx = y;
         kq = 1;
     }
-    else if (maxx < z)
+    if (maxx < z)
     {
         maxx = z;
         kq = 2;
     }
-    else if (maxx < w)
+    if (maxx < w)
     {
         maxx = w;
         kq = 3;
