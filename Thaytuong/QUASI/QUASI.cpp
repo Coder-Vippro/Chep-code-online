@@ -3,12 +3,11 @@ using namespace std;
 bool kt(int n)
 {
     int tong=0;
-    while(n>0)
+    for(int i=1;i<=n;i++)
     {
-        tong=tong+n%10;
-        n=n/10;
+        if(n%i==0)tonng=tong+i;
     }
-    if(tong%2==0)
+    if(tong==n)
     return true;
     return false;
 }
