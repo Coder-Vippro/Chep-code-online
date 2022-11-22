@@ -3,14 +3,13 @@ using namespace std;
 bool kt(int n, int d)
 {
     int tong=0;
-    for(int i=1;i<=n;i++)
+    for(int i=1;i<n;i++)
     {
         if(n%i==0)tong=tong+i;
     }
     if(abs(tong-n)<=d)
     return true;
     return false;
-    
 }
 int main()
 {
@@ -23,6 +22,7 @@ int main()
     {
         if(kt(i,k)==true)
         {
+            cout<<i<<' ';
             dem++;
         }
     }

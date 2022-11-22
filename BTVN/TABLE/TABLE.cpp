@@ -1,34 +1,27 @@
 #include <bits/stdc++.h>
-
 using namespace std;
-int a,b,c,d;
 int main()
 {
-    //freopen("TABLE.INP", "r", stdin);
-    //freopen("TABLE.OUT", "w", stdout);
-    cin >> a >> b >> c >> d;
-    float x = (a / c) - (b / d);
-    float y = (c / d) - (a / b);
-    float z = (d / b) - (c / a);
-    float w = (b / a) - (d / c);
-    float maxx = x;
-    int kq = 0;
-    if (maxx < y)
+    freopen("TABLE.INP", "r",stdin);
+    freopen("TABLE.OUT", "w",stdout);
+    int a,b,c,d;
+    cin>>a>>b>>c>>d;
+    int maxx=max(a,b);
+    maxx=max(c,d);
+    if(maxx==a)
     {
-        maxx = y;
-        kq = 1;
+        cout<<0;
     }
-    if (maxx < z)
+    else if(maxx==c)
     {
-        maxx = z;
-        kq = 2;
+        cout<<1;
     }
-    if (maxx < w)
+    else if(maxx==d)
     {
-        maxx = w;
-        kq = 3;
+        cout<<2;
     }
-    cout << kq;
-    
+    else if(maxx==b)
+    {
+        cout<<3;
+    }
 }
-
