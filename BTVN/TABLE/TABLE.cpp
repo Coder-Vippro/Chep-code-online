@@ -1,16 +1,16 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-double a,b,c,d,x,y,z,w,maxx;
+float a,b,c,d,maxx;
 int main()
 {
     freopen("TABLE.INP", "r", stdin);
     freopen("TABLE.OUT", "w", stdout);
     cin >> a >> b >> c >> d;
-    x = (a / c) - (b / d);
-    y = (c / d) - (a / b);
-    z = (d / b) - (c / a);
-    w = (b / a) - (d / c);
+    float x = (a / c) - (b / d);
+    float y = (c / d) - (a / b);
+    float z = (d / b) - (c / a);
+    float w = (b / a) - (d / c);
     maxx = x;
     int kq = 0;
     if (maxx < y)
