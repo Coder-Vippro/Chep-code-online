@@ -4,29 +4,29 @@ using namespace std;
 float a,b,c,d,x,y,z,w,maxx;
 int main()
 {
-    freopen("TABLE.INP", "r", stdin);
-    freopen("TABLE.OUT", "w", stdout);
+    //freopen("TABLE.INP", "r", stdin);
+    //freopen("TABLE.OUT", "w", stdout);
     cin >> a >> b >> c >> d;
     x = (a / c) - (b / d);
     y = (c / d) - (a / b);
     z = (d / b) - (c / a);
     w = (b / a) - (d / c);
     maxx = x;
-    int kq = 1;
+    int kq = 0;
     if (maxx < y)
     {
         maxx = y;
-        kq = 2;
+        kq = 1;
     }
     else if (maxx < z)
     {
         maxx = z;
-        kq = 3;
+        kq = 2;
     }
     else if (maxx < w)
     {
         maxx = w;
-        kq = 4;
+        kq = 3;
     }
     cout << kq;
     
