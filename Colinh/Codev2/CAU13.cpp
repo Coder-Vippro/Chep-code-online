@@ -4,6 +4,8 @@ long long n;
 string s="";
 int main()
 {
+    freopen("CAU13.INP","r",stdin);
+    freopen("CAU13.OUT","w",stdout);
     cin>>n;
     while(n>0)
     {
