@@ -85,6 +85,12 @@ Codefun.vn/P123/P123.cpp:6:23: error: Array 'A[3]' accessed at index 3, which is
 Codefun.vn/P123/P123.cpp:8:23: error: Array 'A[3]' accessed at index 3, which is out of bounds. [arrayIndexOutOfBounds]
     cout<<A[1]<<' '<<A[3];
                       ^
+Colinh/Codev2/CAU8.cpp:19:8: error: Out of bounds access of s, index 's.size()' is out of bounds. [containerOutOfBoundsIndexExpression]
+    if(s[s.size()]==' ')s.erase(s.size());
+       ^
+Colinh/Codev2/debug/test.cpp:19:8: error: Out of bounds access of s, index 's.size()' is out of bounds. [containerOutOfBoundsIndexExpression]
+    if(s[s.size()]==' ')s.erase(s.size());
+       ^
 Colinh/XAU/XAU17/XAU17.cpp:19:13: error: Array 'm[25]' accessed at index 25, which is out of bounds. [arrayIndexOutOfBounds]
         if(m[i]>0)
             ^
