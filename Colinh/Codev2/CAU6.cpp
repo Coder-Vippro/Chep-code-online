@@ -11,7 +11,7 @@ int main()
         dem1++;
         else dem2++;
     }
-    if(dem1==dem2)cout<<"YES";
+    if(dem1==dem2 || dem1>dem2)cout<<"YES";
     else cout<<"NO";
     return 0;
 }
