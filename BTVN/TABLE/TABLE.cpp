@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-int a,b,c,d;
+float a,b,c,d;
 int main()
 {
-    //freopen("TABLE.INP", "r", stdin);
-    //freopen("TABLE.OUT", "w", stdout);
+    freopen("TABLE.INP", "r", stdin);
+    freopen("TABLE.OUT", "w", stdout);
     cin >> a >> b >> c >> d;
     float x = (a / c) - (b / d);
     float y = (c / d) - (a / b);
@@ -18,12 +18,12 @@ int main()
         maxx = y;
         kq = 1;
     }
-    else if (maxx < z)
+    if (maxx < z)
     {
         maxx = z;
         kq = 2;
     }
-    else if (maxx < w)
+    if (maxx < w)
     {
         maxx = w;
         kq = 3;
