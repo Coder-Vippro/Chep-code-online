@@ -16,17 +16,19 @@ void sangngto (int n)
 
 int main()
 {
-    freopen("SQRNUM.INP","r",stdin);
-    freopen("SQRNUM.OUT","w",stdout);
+    //freopen("SQRNUM.INP","r",stdin);
+    //freopen("SQRNUM.OUT","w",stdout);
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
     int n,x;
     cin>>n;
+    int k=1;
     sangngto(100000);
     while(n--)
     {
         cin>>x;
+        k=k*x;
         if(p[x]==1)cout<<"YES"<<'\n';
         else cout<<"NO"<<'\n';
     }
