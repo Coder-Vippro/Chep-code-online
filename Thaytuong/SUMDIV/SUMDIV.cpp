@@ -21,7 +21,7 @@ int main()
         }
     }
     f[1]=1+p[A[1]];
-    for(int i=2;i<=N;i++)
+    for(int i=2;i<=n;i++)
     {
         f[i]=f[i-1]+p[A[i]]+1;
     }
