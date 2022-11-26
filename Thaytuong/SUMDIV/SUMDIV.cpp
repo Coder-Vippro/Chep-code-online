@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int N=1e7;
-int p[N+5];
-int f[N+5];
-int A[N+5];
-int n,t,x,y;
+long long p[N+5];
+long long f[N+5];
+long long A[N+5];
+long long n,t,x,y;
 int main()
 {
     freopen("SUMDIV.INP","r",stdin);
