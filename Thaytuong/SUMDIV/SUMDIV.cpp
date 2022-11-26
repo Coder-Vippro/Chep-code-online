@@ -1,51 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
-int A[100001];
-int tong1(int n)
-{
-    int k=0;
-    int tong=0;
-    if(n%2==0)
-    {
-        tong=tong+3;
-        return tong;
-    }
-    if(n%2==1)
-    {
-        for(int i=1;i<=n;i+=2)
-        {
-            if(n%i==0)
-            {tong=tong+i;k++;}
-            if(k==2)
-            {
-                return tong;
-            }
-        }
-    }
-    return tong;
-}
+const int N=1e7;
+int p[N+5];
+int f[N+5];
+int A[N+5];
+int n,t,x,y;
 int main()
 {
     freopen("SUMDIV.INP","r",stdin);
     freopen("SUMDIV.OUT","w",stdout);
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-	int n,m,x,y;
-	cin>>n>>m;
-	for(int i=1;i<=n;i++)
-	{
-		cin>>A[i];
-	}
-	while(m--)
-	{
-        int kq=0;
-		cin>>x>>y;
-        for(int i=x;i<=y;i++)
+    cin>>n>>t;
+    for(int i=1;i<=n;i++)cin>>A[i];
+    for(int i=1;i<=N;i++)p[i]=i;
+    for(int i=2;i*i<=N;i++)
+    {
+        if(p[i]==i)
+        for(int j=2;i*j<=N;j++)
         {
-            kq=kq+tong1(A[i]);
+            if(p[i*j]==i*j)p[i*j]=i;
         }
-        cout<<kq<<endl;
-        kq=0;
-	}
+    }
+    f[1]=1+p[A[1]];
+    for(int i=2;i<=N;i++)
+    {
+        f[i]=f[i-1]+p[A[i]]+1;
+    }
+    while(t--)
+    {
+        cin>>x>>y;
+        cout<<f[y]-f[x-1]<<endl;
+    }
+    
 }
