@@ -16,6 +16,8 @@ void sangngto (int n)
 
 int main()
 {
+    freopen("SPRIME.INP","r",stdin);
+    freopen("SPRIME.OUT","w",stdout);
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
@@ -25,7 +27,8 @@ int main()
     while(n--)
     {
         cin>>x;
-        if(f[x]==)
+        if(f[x]==1)cout<<"YES";
+        else cout<<"NO";
     }
     return 0;
 }
