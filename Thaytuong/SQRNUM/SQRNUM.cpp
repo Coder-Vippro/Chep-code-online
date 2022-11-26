@@ -16,8 +16,8 @@ void sangngto (int n)
 
 int main()
 {
-    freopen("SPRIME.INP","r",stdin);
-    freopen("SPRIME.OUT","w",stdout);
+    freopen("SQRNUM.INP","r",stdin);
+    freopen("SQRNUM.OUT","w",stdout);
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
