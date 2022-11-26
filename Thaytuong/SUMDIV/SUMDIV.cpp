@@ -10,26 +10,27 @@ int tong1(int n)
         tong=tong+3;
         return tong;
     }
-    for(int i=1;i<=n;i++)
+    if(n%2==1)
     {
-        if(k!=2)
+        for(int i=1;i<=n;i+=2)
         {
             if(n%i==0)
+            {tong=tong+i;k++;}
+            if(k==2)
             {
-                tong=tong+i;
-                k++;
+                return tong;
             }
         }
-        else return tong;
     }
+    return tong;
 }
 int main()
 {
     freopen("SUMDIV.INP","r",stdin);
     freopen("SUMDIV.OUT","w",stdout);
     ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+    cin.tie(0);
+    cout.tie(0);
 	int n,m,x,y;
 	cin>>n>>m;
 	for(int i=1;i<=n;i++)
