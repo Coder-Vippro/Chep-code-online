@@ -39,7 +39,8 @@ string nhanNho(char a, string b)
 {
     string s = "";
     int temp = 0;
-    for (int i=b.length()-1; i>=0; i--)      {
+    for (int i=b.length()-1; i>=0; i--)      
+    {
         temp = (a-48)*(b[i]-48) + temp;
         s=char(temp%10+48)+s;
         temp = temp/10;
