@@ -1,15 +1,40 @@
 #include <bits/stdc++.h>
+#define N int (1e7)
 using namespace std;
-bool kt(int n, int d)
+int p[N+2];
+void sangngto (int n)
 {
-    int tong=0;
-    for(int i=1;i<n;i++)
+    fill(p,p+n+1,1);
+    p[0]=p[1]=0;
+    for(int i=2;i*i<=n;i++)
     {
-        if(n%i==0)tong=tong+i;
+        if(p[i]==1)
+        for(int j=i*i;j<=n;j+=i) p[j]=0;
     }
-    if(abs(tong-n)<=d)
-    return true;
-    return false;
+}
+long long LT(int n, int k)
+{
+    while(k--)
+    {
+        n=n*n;
+    }
+    return n;
+}
+int tonguoc(int n)
+{
+    int s=1;
+    while(n>1)
+    {
+        int x=p[n];
+        int mu=0;
+        while(n%x==0)
+        {
+            mu++;
+            n/=x;
+        }
+        s=s*(LT(x,mu+1)-1)/(x-1);
+    }
+    return s;
 }
 int main()
 {
@@ -20,7 +45,7 @@ int main()
     int dem=0;
     for(int i=1;i<=n;i++)
     {
-        if(kt(i,k)==true)
+        if(i-tonguoc(i)<=k)
         {
             cout<<i<<' ';
             dem++;
