@@ -4,21 +4,24 @@ using namespace std;
 int p[N+2];
 void sangngto (int n)
 {
-    fill(p,p+n+1,1);
-    p[0]=p[1]=0;
-    for(int i=2;i*i<=n;i++)
+    for(int i=2;i<=N;i++)p[i]=i;
+    for(int i=2;i*i<=N;i++)
     {
-        if(p[i]==1)
-        for(int j=i*i;j<=n;j+=i) p[j]=0;
+        if(p[i]==i)
+        for(int j=2;i*j<=N;j++)
+        {
+            if(p[i*j]==i*j)p[i*j]=i;
+        }
     }
 }
-long long LT(int n, int k)
+long long LT(int n,int k)
 {
-    while(k--)
+    long long ans=1;
+    for(int i=1;i<=k;i++)
     {
-        n=n*n;
+        ans=ans*ans;
     }
-    return n;
+    return ans;
 }
 int tonguoc(int n)
 {
@@ -30,7 +33,7 @@ int tonguoc(int n)
         while(n%x==0)
         {
             mu++;
-            n/=x;
+            n=n/x;
         }
         s=s*(LT(x,mu+1)-1)/(x-1);
     }
@@ -43,11 +46,11 @@ int main()
     int n,k;
     cin>>n>>k;
     int dem=0;
+    sangngto(100001);
     for(int i=1;i<=n;i++)
     {
         if(i-tonguoc(i)<=k)
         {
-            cout<<i<<' ';
             dem++;
         }
     }
