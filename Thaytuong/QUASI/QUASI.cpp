@@ -49,7 +49,7 @@ int main()
     sangngto(100001);
     for(int i=1;i<=n;i++)
     {
-        if(i-tonguoc(i)<=k)
+        if(abs(i-tonguoc(i))<=k)
         {
             dem++;
         }
