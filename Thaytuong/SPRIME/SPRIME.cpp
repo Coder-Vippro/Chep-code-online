@@ -3,6 +3,7 @@
 using namespace std;
 int p[N+2];
 int n;
+int f[3000001];
 void sangngto (int n)
 {
     fill(p,p+n+1,1);
@@ -13,7 +14,7 @@ void sangngto (int n)
         for(int j=i*i;j<=n;j+=i) p[j]=0;
     }
 }
-int kt(int n)
+int tcs(int n)
 {
     int tong=0;
     while(n>0)
@@ -30,20 +31,22 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
-    sangngto(100000);
-    int dem=0;
+    sangngto(3000000);
+    f[1]=0;
+    for(int i=2;i<=3000000;i++)
+    {
+        if(p[i]==1 && tcs(i)%5==0)
+        {
+            f[i]=f[i-1]+1;
+        }
+        else f[i]=f[i-1];
+    }
     cin>>n;
     int d,y;
     while(n--)
     {
         cin>>d>>y;
-        for(int i=d;i<y;i++)
-        {
-            if(kt(i)%5==0 && p[i]==1)
-                dem++;
-        }
-        cout<<dem<<'\n';
-        dem=0;
+        cout<<f[y]-f[d-1]<<'\n';
     }
 
 }
