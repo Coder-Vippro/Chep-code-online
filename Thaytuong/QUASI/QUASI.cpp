@@ -19,7 +19,7 @@ long long LT(int n,int k)
     long long ans=1;
     for(int i=1;i<=k;i++)
     {
-        ans=ans*ans;
+        ans=ans*n;
     }
     return ans;
 }
@@ -41,8 +41,8 @@ int tonguoc(int n)
 }
 int main()
 {
-    freopen("QUASI.INP","r",stdin);
-    freopen("QUASI.OUT","w",stdout);
+    //freopen("QUASI.INP","r",stdin);
+    //freopen("QUASI.OUT","w",stdout);
     int n,k;
     cin>>n>>k;
     int dem=0;
