@@ -10,7 +10,7 @@ int main()
     {
         for(int j=1;j<=b;j++)
         {
-            if(i*a + j*b<j*b +i*a +k)
+            if(i*a + j*b<j*b +i*a +k*c && i+j+)
         }   
     }
 }
