@@ -1,16 +1,28 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-int a[1000000];
+int A[100000];
+int maxx=-1e9;
 int main()
 {
-    freopen("UCLN.inp","r",stdin);
-    freopen("UCLN.out","w",stdout);
-    int n, ma=0;
+    freopen("UCLN.INP","r",stdin);
+    freopen("UCLN.OUT","w",stdout);
+    int n;
     cin>>n;
-    for(int i=1;i<=n;i++)cin>>a[i];
+    //ios_base::sync_with_stdio(false);
+    //cin.tie(0);
+    //cout.tie(0);
     for(int i=1;i<=n;i++)
-        for(int j=i+1;j<=n;j++)ma=max(ma, __gcd(a[i], a[j]));
-    cout<<ma;
+    {
+        cin>>A[i];
+    }
+    for(int i=1;i<=n;i++)
+        {
+            for(int j=i+1;j<=n;j++)
+            {
+                maxx=max(maxx,__gcd(A[i],A[j]));
+            }
+        }
+    cout<<maxx;
     return 0;
 }

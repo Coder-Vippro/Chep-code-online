@@ -1,11 +1,13 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-bool l(int n, int a[], int m)
+bool mang(int n, int a[], int m)
 {
-    for(int i=1;i<=m;i++){
+    for(int i=1;i<=m;i++)
+    {
         if(a[i]==n)return true;
-    }return false;
+    }
+    return false;
 }
 int a[1000000];
 int main()
