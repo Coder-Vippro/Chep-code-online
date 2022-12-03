@@ -112,9 +112,6 @@ Colinh/code/BAI10/BAI10.cpp:16:49: error: syntax error: +] [syntaxError]
 Colinh/code/BAI9/BAI9.cpp:15:49: error: syntax error: +] [syntaxError]
         if(A[i]<A[i+1]||(A[i-1]>A[i] && A[i]<A[i+]))
                                                 ^
-Thaytuong/BKT/PIZZA/PIZZA.cpp:13:23: error: syntax error: +) [syntaxError]
-            if(i*1500 +)
-                      ^
 Thaytuong/MUSHROOM/t1.cpp:7:1: error: Unmatched '{'. Configuration: ''. [syntaxError]
 {
 ^
