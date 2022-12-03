@@ -6,15 +6,14 @@ int kq[100001];
 int n;
 int main()
 {
-    freopen("CONLE.INP","r",stdin);
-    freopen("CONLE.OUT","w",stdout);
+    //freopen("CONLE.INP","r",stdin);
+    //freopen("CONLE.OUT","w",stdout);
     //ios_base::sync_with_stdio(false);
     //cin.tie(0);
     //cout.tie(0);
     cin>>n;
     for(int i=1;i<=n;i++)
-    {
-        cin>>A[i];
+    {        cin>>A[i];
     }
     kq[1]=1;
     for(int i=2;i<=n;i++)
