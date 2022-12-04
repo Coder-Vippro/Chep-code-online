@@ -1,0 +1,42 @@
+			Dữ liệu kiểu xâu:
+*)có 2 cách biểu diễn câu:
+- biểu diễn mảng ký tự 
+vd:char st[100];//nghĩ là mảng cxaau st có 100 phần tử
+-Biểu diễn = xâu string 
+vd:string st1,st2;
+	string st[100];
+*) xuất dữ liệu cho xâu 
+có 2 cách:
++ cin(ko có dấu cách)
++getline(có dấu cách)
+vd1:
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string st;
+    cin>>st;
+    cout<<st;
+    return 0;
+}
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string st;
+    getline(cin,s);
+    cout<<st;
+    return 0;
+}
+*)các phép toán và các phương thức trong xâu 
+-tìm kiếm st1.find(st2) tìm vị trí đầu tiên của xâu st2 xuất hiện st1
+nếu ko tìm thấy trả về giá trị -1
+-thay thế st1.replace(vt,n,st2) nghĩa là thay thế n kí tự của xâu st1, bắt đầu từ vị trí vt bằng xâu st2. Khi đó ko thay đổi , st1 thay đổi
+vd:
+st="abcde";
+st2="111";
+st1=st1.replace(2,1,st2);
