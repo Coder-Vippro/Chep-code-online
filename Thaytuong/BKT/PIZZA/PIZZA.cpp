@@ -2,15 +2,17 @@
 using namespace std;
 int main()
 {
+    freopen("PIZZA.INP","r",stdin);
+    freopen("PIZZA.OUT","w",stdout);
     int a,b,c,x,y;
     cin>>a>>b>>c>>x>>y;
-    int k=2;
-    int tong=0;
-    for(int i=1;i<=a;i++)
+    int kq=a*x+y*b;
+    int gia;
+    for(int k=2;k<=2*max(x,y);k=k+2)
     {
-        for(int j=1;j<=b;j++)
-        {
-            if(i*a + j*b<j*b +i*a +k*c && i+j+)
-        }   
+        gia=k*c+max(0,(x-k/2))*a+max(0,(y-k/2))*b;
+        kq=min(kq,gia);
     }
+    cout<<kq;
+    
 }
