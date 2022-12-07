@@ -1,0 +1,2 @@
+/home/cauvang/Desktop/Code/build/build/CMakeFiles/rebuild_cache.dir
+/home/cauvang/Desktop/Code/build/build/CMakeFiles/edit_cache.dir

@@ -47,7 +47,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/cauvang/Desktop/Code/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cauvang/Desktop/Code
+CMAKE_BINARY_DIR = /home/cauvang/Desktop/Code/build/build
 
 #=============================================================================
 # Directory level rules for the build root directory

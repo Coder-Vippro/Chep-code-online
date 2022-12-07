@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/cauvang/Desktop/Code/build
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cauvang/Desktop/Code
+CMAKE_BINARY_DIR = /home/cauvang/Desktop/Code/build/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cauvang/Desktop/Code/CMakeFiles /home/cauvang/Desktop/Code/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cauvang/Desktop/Code/build/build/CMakeFiles /home/cauvang/Desktop/Code/build/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cauvang/Desktop/Code/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cauvang/Desktop/Code/build/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
