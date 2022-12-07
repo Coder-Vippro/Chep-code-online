@@ -169,7 +169,5 @@ class Solution {
 Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-nofile:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information. [toomanyconfigs]
-
 nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
 
