@@ -1,46 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
-long long ts[10000001];
-int k[100001];
 string s;
-int maxx,minn;
-int vt,vtmin;
+int n, dem[28], kq;
 int main()
-{
+{   
     freopen("HOANVI.INP","r",stdin);
     freopen("HOANVI.OUT","w",stdout);
-    cin>>s;
-    k[0]=1;
-    ts[s[0]]=1;
-    for(int i=1;i<s.size();i++)
-    {
-        ts[s[i]]++;
-        if(s[i]!=s[i-1] && ts[s[i]]==1)
+    cin >> s; n = s.length();
+    for(int i = 0; i < n; ++i){
+        memset(dem, 0, sizeof(dem));
+        for(int j = i; j <= min(i + 25, n - 1); ++j)
         {
-            k[i]=k[i-1]+1;
-        }
-        else 
-        {
-            k[i]=1;
-            int n=s.size();
-            for(int j=1;j<1000;j++)
-            {
-                ts[j]=0;
-            }
+            ++dem[s[j] - 'a' + 1];
+            if(dem[s[j] - 'a' + 1] > 1) break;
+            int cnt = 0;
+            for(int k = 0; k < 27; ++k) cnt += dem[k] != dem[k + 1];
+            if(cnt <= 2) kq = max(kq, j - i + 1);
         }
     }
-    for(int i=1;i<=s.size();i++)
-    {
-        if(k[i]>k[i-1])
-        {
-            maxx=k[i];
-            vt=i;
-        }
-        
-    }
-    for(int i=maxx+1;i<=vt-1;i++)
-    {
-        cout<<s[i];
-    }
+    cout << kq;
     return 0;
 }
