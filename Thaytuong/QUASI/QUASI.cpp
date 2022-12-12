@@ -38,6 +38,8 @@ int tonguoc(int n)
         s=s*(LT(x,mu+1)-1)/(x-1);
     }
     return s;
+
+    
 }
 int main()
 {
