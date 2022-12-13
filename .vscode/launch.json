@@ -2,7 +2,7 @@
   "name": "C++ Launch",
   "type": "cppdbg",
   "request": "launch",
-  "program": "${workspaceFolder}/a.out",
+  "program": "${workspaceFolder}/debug.out",
   "stopAtEntry": false,
   "customLaunchSetupCommands": [
     { "text": "target-run", "description": "run target", "ignoreFailures": false }

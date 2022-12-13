@@ -7,7 +7,7 @@ int giaithua(int n)
     {
         tich=tich*i;
     }
-    return tich;
+    return tich%10;
 }
 bool kt(int n)
 {
@@ -20,10 +20,28 @@ bool kt(int n)
     }
     return false;
 }
+int maxx(int n)
+{
+    int maxx=-1e9+1;
+    while(n>0)
+    {
+        if(n%10>maxx)
+            maxx=n%10;
+        n=n/10;
+    }
+    return maxx;
+}
 int n;
 int main()
 {
     freopen("ONTAP1.INP","r",stdin);
     freopen("ONTAP1.OUT","w",stdout);
-
+    cin>>n;
+    if(kt(n)==true)
+    {
+        cout<<"YES"<<'\n';
+    }
+    else cout<<"NO"<<'\n';
+    cout<<giaithua(n)<<'\n';
+    cout<<maxx;
 }
