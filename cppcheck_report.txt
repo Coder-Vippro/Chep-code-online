@@ -88,9 +88,6 @@ Codefun.vn/P123/P123.cpp:8:23: error: Array 'A[3]' accessed at index 3, which is
 Colinh/Codev2/CAU8.cpp:19:8: error: Out of bounds access of s, index 's.size()' is out of bounds. [containerOutOfBoundsIndexExpression]
     if(s[s.size()]==' ')s.erase(s.size());
        ^
-Colinh/ONTAP/ONTAP7.cpp:1:10: error: No pair for character (<). Can't process file. File is either invalid or unicode, which is currently not supported. [syntaxError]
-#include <bit
-         ^
 Colinh/XAU/XAU17/XAU17.cpp:19:13: error: Array 'm[25]' accessed at index 25, which is out of bounds. [arrayIndexOutOfBounds]
         if(m[i]>0)
             ^
