@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    //freopen("UOCLN.inp","r",stdin);
+    //freopen("UOCLN.out","w",stdout);
+    long long n;cin>>n;
+    cout<<__gcd(n,n);
+    return 0;
+}

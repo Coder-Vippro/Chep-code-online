@@ -1,36 +1,63 @@
 #include <bits/stdc++.h>
 using namespace std;
-string giaima(string s)
-{
-    for(int i=0;i<s.size();i++)
-    {
-        if(s[i]!=' ')
-        {
-            if(s[i]!='A')
-            s[i]=char(s[i]-1);
-            else if(s[i]=='A')s[i]='Z';
-        }
-    }
-    return s;
-}
-string s;
 int n;
+bool ktnt(int x) //kiem tra nt kieu cu
+{
+    if(x<2)return false;
+    if(x==2)return true;
+    for(int i=2;i*i<=n;i++)
+    {
+        if(x%i==0)
+        return false;
+    }
+    return true;
+}
+bool dx(int n)
+{
+    string s="";
+    while(n>0)
+    {
+        s=s+char(n%10+48);
+        n=n/10;
+    }
+    string k=s;
+    reverse(s.begin(),s.end());
+    if(s==k)return true;
+    else return false;
+    return false;
+}
 int main()
 {
-    freopen("ONTAP7.INP","r",stdin);
-    //freopen("ONTAP7.OUT","w",stdout);
-    freopen("kq.OUT","w",stdout);
+    freopen("ONTAP9.INP","r",stdin);
+    freopen("ONTAP9.OUT","w",stdout);
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
-    while(cin>>n)
+    cin>>n;
+    if(ktnt(n)==true)
     {
-        getline(cin,s);
-        for(int i=1;i<=n;i++)
-        {
-            s=giaima(s);
-        }
-        cout<<s<<'\n';
+        cout<<"YES"<<'\n';
     }
-    
+    else cout<<"NO"<<'\n';
+    int k=sqrt(n);
+    if(k*k==n)
+    {
+        cout<<"YES"<<'\n';
+    }
+    else cout<<"NO"<<'\n';
+    if(dx(n)==true)
+    {
+        cout<<"YES"<<'\n';
+    }
+    else cout<<"NO"<<'\n';
+    float dem=0;
+    float tong=0;
+    while(n>0)
+    {
+        tong=tong+n%10;
+        dem++;
+        n=n/10;
+    }
+    cout<<fixed<<setprecision(2)<<tong/dem;
+    return 0;
 }
