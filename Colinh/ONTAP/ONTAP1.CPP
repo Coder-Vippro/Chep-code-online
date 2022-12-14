@@ -1,15 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
-int giaithua(int n)
+int so[] = {1,1,2,6,4,2,2,4,2,8};
+int kt(int n)
 {
-    int tich=1;
-    for(int i=1;i<=n;i++)
-    {
-        tich=tich*i;
-    }
-    return tich%10;
+    if (n < 10)return so[n];
+    if (((n/10)%10)%2==0)
+    return (6*kt(n/5)*so[n%10])%10;
+    else return (4*kt(n/5)*so[n%10]) % 10;
 }
-bool kt(int n)
+bool kt1(int n)
 {
     int tong=0;
     for(int i=1;i<=n;i++)
@@ -26,7 +25,7 @@ int maxx(int n)
     while(n>0)
     {
         if(n%10>maxx)
-            maxx=n%10;
+        maxx=n%10;
         n=n/10;
     }
     return maxx;
@@ -34,14 +33,17 @@ int maxx(int n)
 int n;
 int main()
 {
-    freopen("ONTAP1.INP","r",stdin);
-    freopen("ONTAP1.OUT","w",stdout);
+    //freopen("ONTAP1.INP","r",stdin);
+    //freopen("ONTAP1.OUT","w",stdout);
     cin>>n;
-    if(kt(n)==true)
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+    if(kt1(n)==true)
     {
         cout<<"YES"<<'\n';
     }
     else cout<<"NO"<<'\n';
-    cout<<giaithua(n)<<'\n';
-    cout<<maxx;
+    cout<<maxx<<'\n';
+    cout<<kt(n);
 }
