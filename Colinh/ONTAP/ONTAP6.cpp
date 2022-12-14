@@ -4,8 +4,7 @@ string s;
 int main()
 {
     freopen("ONTAP6.INP","r",stdin);
-    //freopen("ONTAP6.OUT","w",stdout);
-    freopen("kq.out","w",stdout);
+    freopen("ONTAP6.OUT","w",stdout);
     cin>>s;
     char tmp=s[0];
     cout<<tmp;
