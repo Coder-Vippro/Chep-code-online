@@ -112,6 +112,39 @@ Colinh/code/BAI10/BAI10.cpp:16:49: error: syntax error: +] [syntaxError]
 Colinh/code/BAI9/BAI9.cpp:15:49: error: syntax error: +] [syntaxError]
         if(A[i]<A[i+1]||(A[i-1]>A[i] && A[i]<A[i+]))
                                                 ^
+I202202/BAI06/BAI06.cpp:17:13: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        if(s[i]>='a' && s[i]<='z' && s[i-1]==' ')
+            ^
+I202202/BAI06/BAI06.cpp:18:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        s[i]=s[i]-32;
+         ^
+I202202/BAI06/BAI06.cpp:19:43: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        if(s[i-1]>='A' && s[i-1]<='Z' && s[i]>='A' && s[i]<='Z')
+                                          ^
+I202202/BAI06/BAI06.cpp:20:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        s[i]=s[i]+32;
+         ^
+I202202/BAI06/BAI06.cpp:21:43: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        if(s[i-1]>='a' && s[i-1]<='z' && s[i]>='A' && s[i]<='Z')
+                                          ^
+I202202/BAI06/BAI06.cpp:22:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        s[i]=s[i]+32;
+         ^
+I202202/BAI06/BAI06.cpp:23:13: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        if(s[i]>='A' && s[i]<='Z' && s[i-1]>='a' && s[i-1]<='z')
+            ^
+I202202/BAI06/BAI06.cpp:24:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        s[i]=s[i]+32;
+         ^
+I202202/BAI06/BAI06.cpp:19:12: error: Array index -1 is out of bounds. [negativeContainerIndex]
+        if(s[i-1]>='A' && s[i-1]<='Z' && s[i]>='A' && s[i]<='Z')
+           ^
+I202202/BAI06/BAI06.cpp:21:12: error: Array index -1 is out of bounds. [negativeContainerIndex]
+        if(s[i-1]>='a' && s[i-1]<='z' && s[i]>='A' && s[i]<='Z')
+           ^
+I202202/BAI07/BAI07.cpp:13:13: error: Uninitialized variable: dem [uninitvar]
+        dem=dem+s[i];
+            ^
 Thaytuong/MUSHROOM/t1.cpp:7:1: error: Unmatched '{'. Configuration: ''. [syntaxError]
 {
 ^
