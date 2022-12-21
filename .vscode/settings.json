@@ -79,5 +79,10 @@
     "git.ignoreLimitWarning": true,
     "discord-chat.token": "ODc4NTczODgxNDQ5OTA2MjA4.GuB0bv.1DbqR3RQMzMIlBkauFTheknGnZyg_dVzsYUNgE",
     "discord-chat.setUpIfDiscordChaStartWhenVSCodeOpened": true,
-    "cmake.sourceDirectory": "${workspaceFolder}/."
+    "cmake.sourceDirectory": "${workspaceFolder}/.",
+    "editor.quickSuggestionsDelay": 0,
+    "editor.suggest.preview": true,
+    "editor.suggest.shareSuggestSelections": true,
+    "editor.suggest.showStatusBar": true,
+    "editor.suggest.localityBonus": true
 }
