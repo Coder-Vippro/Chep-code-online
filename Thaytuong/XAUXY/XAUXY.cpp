@@ -4,7 +4,7 @@ int main()
 {
     freopen("XAUXY.INP","r",stdin);
     freopen("XAUXY.OUT","w",stdout);
-    string s;
+    string s;    
     cin>>s;
     sort(s.begin(),s.end());
     int dem=0;
