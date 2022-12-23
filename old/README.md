@@ -1,1 +1,1 @@
-Just some things don't use for a very long time :))
+Just some things that haven't been used for a very long time :))
