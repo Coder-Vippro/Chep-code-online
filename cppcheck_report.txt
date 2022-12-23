@@ -1,9 +1,3 @@
-BKT/BAI60722/BAI60722.cpp:20:13: error: When i==n.size(), n[i] is out of bounds. [stlOutOfBounds]
-    cs=int(n[i])-48;
-            ^
-BKT/ROBOT/ROBOT.cpp:12:9: error: syntax error [syntaxError]
-        if()
-        ^
 BTVN/BEST/BEST.cpp:10:20: error: Uninitialized variable: a [uninitvar]
     for(int i=1;i<=a;i++)
                    ^
@@ -25,6 +19,12 @@ BTVN/BEST/BEST.cpp:17:8: error: Uninitialized variable: a [uninitvar]
 BTVN/BEST/BEST.cpp:18:15: error: Uninitialized variable: b [uninitvar]
     else ll n=b;
               ^
+BTVN/BKT/BAI60722/BAI60722.cpp:20:13: error: When i==n.size(), n[i] is out of bounds. [stlOutOfBounds]
+    cs=int(n[i])-48;
+            ^
+BTVN/BKT/ROBOT/ROBOT.cpp:12:9: error: syntax error [syntaxError]
+        if()
+        ^
 BTVN/CPHONE/CPHONE.cpp:19:10: error: Array 'TS[100001]' accessed at index 100001, which is out of bounds. [arrayIndexOutOfBounds]
     if(TS[i]>maxx)
          ^
@@ -58,36 +58,69 @@ BTVN/MISTAKE/MISTAKE.cpp:31:14: error: When i==b.size(), b[i] is out of bounds. 
 BTVN/MORPHER/MORPHER.cpp:14:14: error: Uninitialized variable: r [uninitvar]
         cin>>r>>
              ^
-Codefun.vn/P062/P062.cpp:18:4: error: Unmatched '}'. Configuration: ''. [syntaxError]
+Colinh/Codefun.vn/P062/P062.cpp:18:4: error: Unmatched '}'. Configuration: ''. [syntaxError]
    }
    ^
-Codefun.vn/P064/P064.cpp:7:11: error: Uninitialized variable: n [uninitvar]
+Colinh/Codefun.vn/P064/P064.cpp:7:11: error: Uninitialized variable: n [uninitvar]
     while(n>0)
           ^
-Codefun.vn/P064/P064.cpp:9:11: error: Uninitialized variable: n [uninitvar]
+Colinh/Codefun.vn/P064/P064.cpp:9:11: error: Uninitialized variable: n [uninitvar]
         n=n/10;
           ^
-Codefun.vn/P074/P074.cpp:13:11: error: Uninitialized variable: n [uninitvar]
+Colinh/Codefun.vn/P074/P074.cpp:13:11: error: Uninitialized variable: n [uninitvar]
 for(int i=n;i>0;i--)
           ^
-Codefun.vn/P084/P084.cpp:4:1: error: Unmatched '{'. Configuration: ''. [syntaxError]
+Colinh/Codefun.vn/P084/P084.cpp:4:1: error: Unmatched '{'. Configuration: ''. [syntaxError]
 {
 ^
-Codefun.vn/P086/P086.cpp:16:9: error: syntax error [syntaxError]
+Colinh/Codefun.vn/P086/P086.cpp:16:9: error: syntax error [syntaxError]
         if
         ^
-Codefun.vn/P102/P102.cpp:6:29: error: Array 'A[4]' accessed at index 4, which is out of bounds. [arrayIndexOutOfBounds]
+Colinh/Codefun.vn/P102/P102.cpp:6:29: error: Array 'A[4]' accessed at index 4, which is out of bounds. [arrayIndexOutOfBounds]
     cin>>A[1]>>A[2]>>A[3]>>A[4];
                             ^
-Codefun.vn/P123/P123.cpp:6:23: error: Array 'A[3]' accessed at index 3, which is out of bounds. [arrayIndexOutOfBounds]
+Colinh/Codefun.vn/P123/P123.cpp:6:23: error: Array 'A[3]' accessed at index 3, which is out of bounds. [arrayIndexOutOfBounds]
     cin>>A[1]>>A[2]>>A[3];
                       ^
-Codefun.vn/P123/P123.cpp:8:23: error: Array 'A[3]' accessed at index 3, which is out of bounds. [arrayIndexOutOfBounds]
+Colinh/Codefun.vn/P123/P123.cpp:8:23: error: Array 'A[3]' accessed at index 3, which is out of bounds. [arrayIndexOutOfBounds]
     cout<<A[1]<<' '<<A[3];
                       ^
 Colinh/Codev2/CAU8.cpp:19:8: error: Out of bounds access of s, index 's.size()' is out of bounds. [containerOutOfBoundsIndexExpression]
     if(s[s.size()]==' ')s.erase(s.size());
        ^
+Colinh/I202202/BAI06/BAI06.cpp:17:13: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        if(s[i]>='a' && s[i]<='z' && s[i-1]==' ')
+            ^
+Colinh/I202202/BAI06/BAI06.cpp:18:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        s[i]=s[i]-32;
+         ^
+Colinh/I202202/BAI06/BAI06.cpp:19:43: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        if(s[i-1]>='A' && s[i-1]<='Z' && s[i]>='A' && s[i]<='Z')
+                                          ^
+Colinh/I202202/BAI06/BAI06.cpp:20:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        s[i]=s[i]+32;
+         ^
+Colinh/I202202/BAI06/BAI06.cpp:21:43: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        if(s[i-1]>='a' && s[i-1]<='z' && s[i]>='A' && s[i]<='Z')
+                                          ^
+Colinh/I202202/BAI06/BAI06.cpp:22:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        s[i]=s[i]+32;
+         ^
+Colinh/I202202/BAI06/BAI06.cpp:23:13: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        if(s[i]>='A' && s[i]<='Z' && s[i-1]>='a' && s[i-1]<='z')
+            ^
+Colinh/I202202/BAI06/BAI06.cpp:24:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
+        s[i]=s[i]+32;
+         ^
+Colinh/I202202/BAI06/BAI06.cpp:19:12: error: Array index -1 is out of bounds. [negativeContainerIndex]
+        if(s[i-1]>='A' && s[i-1]<='Z' && s[i]>='A' && s[i]<='Z')
+           ^
+Colinh/I202202/BAI06/BAI06.cpp:21:12: error: Array index -1 is out of bounds. [negativeContainerIndex]
+        if(s[i-1]>='a' && s[i-1]<='z' && s[i]>='A' && s[i]<='Z')
+           ^
+Colinh/I202202/BAI07/BAI07.cpp:13:13: error: Uninitialized variable: dem [uninitvar]
+        dem=dem+s[i];
+            ^
 Colinh/XAU/XAU17/XAU17.cpp:19:13: error: Array 'm[25]' accessed at index 25, which is out of bounds. [arrayIndexOutOfBounds]
         if(m[i]>0)
             ^
@@ -112,94 +145,61 @@ Colinh/code/BAI10/BAI10.cpp:16:49: error: syntax error: +] [syntaxError]
 Colinh/code/BAI9/BAI9.cpp:15:49: error: syntax error: +] [syntaxError]
         if(A[i]<A[i+1]||(A[i-1]>A[i] && A[i]<A[i+]))
                                                 ^
-I202202/BAI06/BAI06.cpp:17:13: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
-        if(s[i]>='a' && s[i]<='z' && s[i-1]==' ')
-            ^
-I202202/BAI06/BAI06.cpp:18:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
-        s[i]=s[i]-32;
-         ^
-I202202/BAI06/BAI06.cpp:19:43: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
-        if(s[i-1]>='A' && s[i-1]<='Z' && s[i]>='A' && s[i]<='Z')
-                                          ^
-I202202/BAI06/BAI06.cpp:20:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
-        s[i]=s[i]+32;
-         ^
-I202202/BAI06/BAI06.cpp:21:43: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
-        if(s[i-1]>='a' && s[i-1]<='z' && s[i]>='A' && s[i]<='Z')
-                                          ^
-I202202/BAI06/BAI06.cpp:22:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
-        s[i]=s[i]+32;
-         ^
-I202202/BAI06/BAI06.cpp:23:13: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
-        if(s[i]>='A' && s[i]<='Z' && s[i-1]>='a' && s[i-1]<='z')
-            ^
-I202202/BAI06/BAI06.cpp:24:10: error: When i==s.size(), s[i] is out of bounds. [stlOutOfBounds]
-        s[i]=s[i]+32;
-         ^
-I202202/BAI06/BAI06.cpp:19:12: error: Array index -1 is out of bounds. [negativeContainerIndex]
-        if(s[i-1]>='A' && s[i-1]<='Z' && s[i]>='A' && s[i]<='Z')
-           ^
-I202202/BAI06/BAI06.cpp:21:12: error: Array index -1 is out of bounds. [negativeContainerIndex]
-        if(s[i-1]>='a' && s[i-1]<='z' && s[i]>='A' && s[i]<='Z')
-           ^
-I202202/BAI07/BAI07.cpp:13:13: error: Uninitialized variable: dem [uninitvar]
-        dem=dem+s[i];
-            ^
 Thaytuong/MUSHROOM/t1.cpp:7:1: error: Unmatched '{'. Configuration: ''. [syntaxError]
 {
 ^
-Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+old/300baicode/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
 class Solution {
 ^
-Contest/Binarysearch.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/Binarysearch.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+old/300baicode/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
 class Solution {
 ^
-Contest/COPHIEU.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/COPHIEU.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+old/300baicode/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
 class Solution {
 ^
-Contest/LowestCommonAncestorofaBinarySearchTree.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/LowestCommonAncestorofaBinarySearchTree.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+old/300baicode/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
 class Solution {
 ^
-Contest/MaximumSubarray.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/MaximumSubarray.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+old/300baicode/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
 class Solution {
 ^
-Contest/Ransomnote.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/Ransomnote.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+old/300baicode/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
 class Solution {
 ^
-Contest/palinrome.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/palinrome.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
-Contest/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+old/300baicode/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
 nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
