@@ -1,27 +1,24 @@
 #include <bits/stdc++.h>
+
 using namespace std;
-int n,m,a[1010][1010],h[1010],l[1010],r[1010],s;
+pair <long long,long long> a[55];
 int main()
 {
-    cin>>m>>n;
-    for (int i=1;i<=m;i++)
-        for (int j=1;j<=n;j++) cin>>a[i][j];
-    h[0]=-1;h[n+1]=-1;
-    for (int i=1;i<=m;i++) {
-        for (int j=1;j<=n;j++)
-            h[j]=a[i][j]*(h[j]+1);
-        for (int j=1;j<=n;j++) {
-            l[j] = j;
-            while (h[l[j]-1] >= h[j]) l[j] = l[l[j]-1];
+    long long n,k;
+    cin>>n>>k;
+    for(int i=1;i<=n;i++) cin>>a[i].first>>a[i].second;
+    sort(a+1,a+n+1);
+    long long x1,x2,y1,y2,minn=4e18;
+    for(int i=1;i<=n-k+1;i++)
+    {
+        x1=a[i].first,x2=a[i+k-1].first,y1=1e18,y2=-1e18;
+        for(int j=i;j<=i+k-1;j++)
+        {
+            y1=min(y1,a[j].second);
+            y2=max(y2,a[j].second);
         }
-        for (int j=n;j>0;j--) {
-            r[j]=j;
-            while (h[r[j]+1]>=h[j])r[j]=r[r[j]+1];
-        }
-        for (int j=1;j<=n;j++)
-            s = max(s,h[j]*(r[j]-l[j]+1));
+        minn=min(minn,((x2-x1)*(y2-y1)));
     }
-    cout<<s;
+    cout<<minn;
+    return 0;
 }
-//By Gia Hung Le 
-//Copy by cauvangdepzai1

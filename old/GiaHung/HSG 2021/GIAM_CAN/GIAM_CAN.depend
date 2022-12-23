@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1645087446 source:f:\taphuantin2022\giam_can\giam_can.cpp
+	<iostream>
+
+1645091400 source:f:\taphuantin2022\giam_can\giamcan.cpp
+	<bits/stdc++.h>
+

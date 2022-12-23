@@ -30,8 +30,11 @@ string Fibo(int n)
 }
 int main()
 {
-    //freopen("fibonaci.INP","r",stdin);
-    //freopen("fibonaci.OUT","w",stdout);
+    freopen("fibo.INP","r",stdin);
+    freopen("fibo.OUT","w",stdout);
     cin>>n;
-    cout<<Fibo(n);
+    for(int i=1;i<=n;i++)
+    {
+        cout<<Fibo(i)<<' ';
+    }
 }
