@@ -6,7 +6,11 @@ int main()
 {
     freopen("BAI03.INP","r",stdin);
     freopen("BAI03.OUT","w",stdout);
+    freopen("debug.out","w",stdout);
     cin>>n;
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
     for(int i=1;i<=n;i++)
         for(int j=2;j<=n;j++)
             {

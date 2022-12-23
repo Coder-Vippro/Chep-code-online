@@ -24,5 +24,6 @@ int main()
         s[i]=s[i]+32;
     }
     if(s[0]==' ')s.erase(s.begin());
+    if(s[0]>='a' && s[0]<='z')s[0]=s[0]-32;
     cout<<s;
 }

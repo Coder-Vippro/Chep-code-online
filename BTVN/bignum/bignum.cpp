@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-string tong(string x,string k)
+string sum(string x,string k)
 {
     string kq="";
     while (k.length()<x.length()) k='0'+k;
@@ -53,8 +53,8 @@ string nhan(string a, string b){
     int l=a.length();
     string s1;
     for (int i=l-1; i>=0; i--){
-        s1[i] = nhanNho(a[i],b);
-        s1[i].insert(s1.length(),l-i-1,'0');
+        s1 = s1 + nhanNho(a[i],b);
+        s1.insert(s1.length(),l-i-1,'0');
         s =sum(s, s1);
     }
     return s;
