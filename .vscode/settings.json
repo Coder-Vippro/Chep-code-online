@@ -77,7 +77,7 @@
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "git.ignoreLimitWarning": true,
-    "discord-chat.token": "ODc4NTczODgxNDQ5OTA2MjA4.GuB0bv.1DbqR3RQMzMIlBkauFTheknGnZyg_dVzsYUNgE",
+    "discord-chat.token": "",
     "discord-chat.setUpIfDiscordChaStartWhenVSCodeOpened": true,
     "cmake.sourceDirectory": "${workspaceFolder}/.",
     "editor.quickSuggestionsDelay": 0,
