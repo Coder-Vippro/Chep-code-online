@@ -65,7 +65,7 @@ int main()
     stringstream ss;
     ss<<n;
     ss>>k;
-    for(int i=1;i<=n;i++)
+    for(int i=1;i<n;i++)
     {
         if(p[i]==1)demnt++;
         if(Fibo(i)==1 && i<n){demfibo++;}
