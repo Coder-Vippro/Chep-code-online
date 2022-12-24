@@ -1,17 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
+string s;
+int kq=0;
 int main()
 {
     freopen("XAUXY.INP","r",stdin);
-    freopen("XAUXY.OUT","w",stdout);
-    string s;    
+    freopen("XAUXY.OUT","w",stdout);   
     cin>>s;
-    sort(s.begin(),s.end());
-    int dem=0;
-    for(int i=1;i<s.size();i++)
+    int n=s.size();
+    string x,y;
+    for(int vt=0;vt<=n-1;vt++)
     {
-        if(s[i]!=s[i-1])dem++;
+        x=s.substr(0,vt);
+        y=s.substr(vt,n);
+        int d=0;
+        for(char ch='a';ch<='z';ch++)
+        {
+            if(x.find(ch,0)!=x.npos && y.find(ch,0)!=y.npos)d++;
+            if(d>kq)kq=d;
+        }
     }
-    cout<<dem;
+    cout<<kq;
     return 0;
 }
