@@ -34,4 +34,5 @@ int main()
         }
     }
     cout<<minn<<'\n'<<maxx;
+    return 0;
 }
