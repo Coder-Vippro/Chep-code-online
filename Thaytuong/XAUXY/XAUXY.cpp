@@ -1,11 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 string s;
-int kq=0;
+int kq=0, a;
 int main()
 {
     freopen("XAUXY.INP","r",stdin);
-    freopen("XAUXY.OUT","w",stdout);   
+    freopen("XAUXY.OUT","w",stdout);
+    cin>>a;
     cin>>s;
     int n=s.size();
     string x,y;
