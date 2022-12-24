@@ -2,12 +2,11 @@
 using namespace std;
 string s;
 int kq=0;
-int x;
 int main()
 {
     freopen("XAUXY.INP","r",stdin);
     freopen("XAUXY.OUT","w",stdout);   
-    cin>>x>>s;
+    cin>>s;
     int n=s.size();
     string x,y;
     for(int vt=0;vt<n-1;vt++)
