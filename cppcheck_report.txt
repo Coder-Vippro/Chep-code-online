@@ -34,6 +34,9 @@ Colinh/I202202/BAI06/BAI06.cpp:21:12: error: Array index -1 is out of bounds. [n
 Colinh/I202202/BAI07/BAI07.cpp:13:13: error: Uninitialized variable: dem [uninitvar]
         dem=dem+s[i];
             ^
+Colinh/TEMP/KT03.cpp:28:1: error: Unmatched '{'. Configuration: ''. [syntaxError]
+{
+^
 Colinh/XAU/XAU17/XAU17.cpp:19:13: error: Array 'm[25]' accessed at index 25, which is out of bounds. [arrayIndexOutOfBounds]
         if(m[i]>0)
             ^
