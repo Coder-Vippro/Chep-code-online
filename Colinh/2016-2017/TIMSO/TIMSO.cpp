@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+/*#include <bits/stdc++.h>
 using namespace std;
 string s;
 int main()
@@ -35,4 +35,14 @@ int main()
     }
     cout<<minn<<'\n'<<maxx;
     return 0;
+}*/
+#include <iostream>
+#include <iomanip>
+#include <algorithm>
+#include <vector>
+#include <string>
+using namespace std;
+int main()
+{
+    
 }
