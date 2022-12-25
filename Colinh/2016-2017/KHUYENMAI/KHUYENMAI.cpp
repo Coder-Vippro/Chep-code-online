@@ -12,4 +12,5 @@ int main()
     }
     else cout<<a*b;
     return 0;
+    //
 }
