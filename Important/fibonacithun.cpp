@@ -37,4 +37,5 @@ int main()
     {
         cout<<Fibo(i)<<' ';
     }
+    return 0;
 }
