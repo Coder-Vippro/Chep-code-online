@@ -14,12 +14,12 @@ void sangngto (int n)
 }
 int fb(int n)
 {
-    if(n==1||n==0||n==2||n==3) return n;
+    if(n==1||n==2||n==3) return n;
     return fb(n-2)+fb(n-1);
 }
 int Fibo(int n)
 {
-    int i=0;
+    int i=1;
     while(n>fb(i))
     {
         i++;
@@ -65,7 +65,7 @@ int main()
     stringstream ss;
     ss<<n;
     ss>>k;
-    for(int i=1;i<n;i++)
+    for(int i=0;i<n;i++)
     {
         if(p[i]==1)demnt++;
         if(Fibo(i)==1 && i<n){demfibo++;}
@@ -73,6 +73,6 @@ int main()
         if(ktdx(i)==true)demdx++;
         if(ktmm(k,i)==true)demmayman++;
     }
-    cout<<demnt<<'\n'<<demfibo-1<<'\n'<<demcp<<'\n'<<demdx<<'\n'<<demmayman;
+    cout<<demnt<<'\n'<<demfibo<<'\n'<<demcp<<'\n'<<demdx<<'\n'<<demmayman;
     
 }

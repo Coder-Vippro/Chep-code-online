@@ -1,48 +1,30 @@
 #include <bits/stdc++.h>
 using namespace std;
-string sum(string x,string k)
-{
-    string kq="";
-    while (k.length()<x.length()) k='0'+k;
-    while (k.length()>x.length()) x='0'+x;
-    int nho=0,cs1,cs2,cs;
-    for(int i=k.length()-1;i>=0;i--)
-    {
-        cs1=x[i]-48;
-        cs2=k[i]-48;
-        cs=(cs1+cs2+nho);
-        nho=cs/10;cs=cs%10;
-        kq=char(cs+48)+kq;
-    }
-    if(nho>0) kq='1'+kq;
-    return kq;
-}
-string nhanNho(char a, string b)
-{
-    string s = "";
-    int temp = 0;
-    for (int i=b.length()-1; i>=0; i--)      
-    {
-        temp = (a-48)*(b[i]-48) + temp;
-        s=char(temp%10+48)+s;
-        temp = temp/10;
-    }
-    if (temp>0)s=char(temp%10+48)+s;
-    return s;
-}
 string nhan(string a, string b)
 {
-    string s = "";
-    int l=a.length();
-    string s1;
-    for(int i=l-1; i>=0; i--){
-        s1 = nhanNho(a[i],b);
-        s1.insert(s1.length(),l-i-1,'0');
-        s =sum(s, s1);
+    string res="";
+    int n=a.length();
+    int m=b.length();
+    int len=n+m-1;
+    int carry=0;
+    for(int i=len;i>=0;i--)
+    {
+        int tmp=0;
+        for(int j=n-1;j>=0;j--)
+            if(i-j<=m && i-j>=1)
+            {
+                int a1=a[j]-48;
+                int b1=b[i-j-1]-48;
+                tmp+=a1*b1;
+            }
+        tmp+=carry;
+        carry=tmp/10;
+        res=char(tmp%10 + 48)+res;
     }
-    return s;
+    while(res.length()>1 && res[0]=='0') res.erase(0,1);
+    return res;
 }
-bool kt (int n)
+bool kt(int n)
 {
     int m=2*n;
     int x=sqrt(m);
@@ -75,7 +57,6 @@ string kq1(int n)
     }
     return kq;
 }
-
 int main()
 {
     freopen("KT01.INP","r",stdin);
@@ -90,6 +71,7 @@ int main()
     {
         cout<<"YES"<<'\n';
     }
+    else cout<<"NO"<<'\n';
     cout<<kq(n)<<'\n';
     string s=kq1(n);
     for(int i=s.size()-1;i>=0;i--)

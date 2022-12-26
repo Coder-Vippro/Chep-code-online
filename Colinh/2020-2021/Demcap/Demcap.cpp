@@ -18,8 +18,8 @@ int main()
         i++;
     }
     if((kq-2)%2==0)
-    cout<<kq-5;
-    else cout<<kq-3;
+    cout<<abs(kq-5);
+    else cout<<abs(kq-3);
     return 0;
 }
 
