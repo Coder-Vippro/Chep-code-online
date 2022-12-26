@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-string sum(string x,string k)
+string tong(string x,string k)
 {
     string kq="";
     while (k.length()<x.length()) k='0'+k;
@@ -54,7 +54,7 @@ string nhan(string a, string b)
             }
         tmp+=carry;
         carry=tmp/10;
-        res=(char)(tmp%10 + 48)+res;
+        res=char(tmp%10 + 48)+res;
     }
     while(res.length()>1 && res[0]=='0') res.erase(0,1);
     return res;
