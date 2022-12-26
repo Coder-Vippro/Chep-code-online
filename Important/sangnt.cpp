@@ -5,7 +5,7 @@ int p[N+2];
 int n;
 void sangngto (int n) //sang nguyen to
 {
-    fill(p,p+n+1,1); //phu toan bo mang p voi gia tri 1
+    fill(p,p+n+1,1); //phu toan bo mang p voi gia tri 
     p[0]=p[1]=0;
     for(int i=2;i*i<=n;i++)
     {
