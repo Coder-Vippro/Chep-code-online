@@ -45,3 +45,6 @@ int main()
     }
     cout<<dem;
 }
+//xay dung ham kt xau doi xung
+//duyet tung tu trong xau ban dau
+//goi gam ktdx() ben tren neu dung tang bien kq len 1 don vi

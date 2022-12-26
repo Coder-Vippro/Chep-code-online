@@ -25,4 +25,13 @@ int main()
         }
     }
     cout<<dem;
+    //su dung chat nhi phan
+    //sap xep mang gom n so nguyen tung doi mot khac nhau the thu tu tang dan
+    //cho i chay tu 1 den n-1 ta thuc hien 2 cong viec
+    //gan gtri dau laf i+1 va gtri cuoi la n
+    // su dung chat nhi phan tu vtri i+1 den n de lay gia ti a giua + a[i]
+    //Th1: neu a giua + a[i]==x thi tang bien dem len 1 va dung luon vong lap i+1 den n
+    //Th2: neu a giua + a[i]>x thi cuoi = giua -1
+    //Th3: neu a giua + a[i]<x thi dau = giua +1
+    //ket qua tim dc laf bien dem
 }

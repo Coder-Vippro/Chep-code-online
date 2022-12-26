@@ -35,3 +35,4 @@ int main()
     }
     cout<<maxx;
 }
+//duyet 2 vaong lap va xet 2 phan tu lien tiep de tim phan tu lon nhat

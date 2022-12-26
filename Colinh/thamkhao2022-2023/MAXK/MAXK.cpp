@@ -22,4 +22,7 @@ int main()
         }
         if(k==0){cout<<A[i];return 0;}
     }
+    //nhap tung phan tu va day vao mang
+    //xap xep day giam dan
+    //kq la so o vi tri thu k
 }
