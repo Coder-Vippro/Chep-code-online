@@ -35,29 +35,29 @@ string hieu(string x,string k)
     while(kq[0]=='0' && kq.length()>1) kq.erase(0,1);
     return kq;
 }
-string nhanNho(char a, string b)
+string nhan(string a, string b)
 {
-    string s = "";
-    int temp = 0;
-    for (int i=b.length()-1; i>=0; i--)      
+    string res="";
+    int n=a.length();
+    int m=b.length();
+    int len=n+m-1;
+    int carry=0;
+    for(int i=len;i>=0;i--)
     {
-        temp = (a-48)*(b[i]-48) + temp;
-        s=char(temp%10+48)+s;
-        temp = temp/10;
+        int tmp=0;
+        for(int j=n-1;j>=0;j--)
+            if(i-j<=m && i-j>=1)
+            {
+                int a1=a[j]-48;
+                int b1=b[i-j-1]-48;
+                tmp+=a1*b1;
+            }
+        tmp+=carry;
+        carry=tmp/10;
+        res=(char)(tmp%10 + 48)+res;
     }
-    if (temp>0)s=char(temp%10+48)+s;
-    return s;
-}
-string nhan(string a, string b){
-    string s = "";
-    int l=a.length();
-    string s1;
-    for (int i=l-1; i>=0; i--){
-        s1 = s1 + nhanNho(a[i],b);
-        s1.insert(s1.length(),l-i-1,'0');
-        s =sum(s, s1);
-    }
-    return s;
+    while(res.length()>1 && res[0]=='0') res.erase(0,1);
+    return res;
 }
 int main()
 {
