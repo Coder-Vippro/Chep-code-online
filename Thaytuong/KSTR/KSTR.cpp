@@ -28,5 +28,5 @@ int main()
             i--;
         }
     }
-    cout<<p[n];
+    cout<<p[n-1];
 }
