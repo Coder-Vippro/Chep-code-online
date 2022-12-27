@@ -202,6 +202,15 @@ class Solution {
 old/300baicode.vn/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
 class Solution {
 ^
+old/300baicode.vn/debug/debug.cpp:4:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+old/300baicode.vn/Anagram.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
+class Solution {
+^
+old/300baicode.vn/Anagram.cpp:1:1: error: The one definition rule is violated, different classes/structs have the same name 'Solution' [ctuOneDefinitionRuleViolation]
+class Solution {
+^
 old/300baicode.vn/palinrome.cpp:1:1: note: The one definition rule is violated, different classes/structs have the same name 'Solution'
 class Solution {
 ^
