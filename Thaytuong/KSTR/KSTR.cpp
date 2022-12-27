@@ -16,7 +16,7 @@ int main()
     {
         for(int j=i;j<i+n;j++)
         {
-            p.push_back(s.substr(i,j-i));
+            p.push_back(s.substr(i,j-i+1));
         }
     }
     sort(p.begin(),p.end());
@@ -29,6 +29,4 @@ int main()
         }
     }
     cout<<p[n];
-    
-    
 }
