@@ -28,6 +28,7 @@ int main()
             i--;
         }
     }
-    cout<<p[n-1];
+    cout<<p[n];
+    
     
 }
