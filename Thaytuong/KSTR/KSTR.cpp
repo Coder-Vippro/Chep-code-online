@@ -22,11 +22,11 @@ int main()
     sort(p.begin(),p.end());
     for(int i=0;i<p.size();i++)
     {
-        if(p[i]==p[i+1])
+        if(p[i]!=p[i+1])
         {
-            p.erase(p.begin()+i);
-            i--;
+            n--; 
         }
+        if(n==0)
+        {cout<<p[i];return 0;}
     }
-    cout<<p[n-1];
 }
