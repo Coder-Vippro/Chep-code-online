@@ -4,21 +4,45 @@
 using namespace std;
 int A[1000001];
 int dem=0;
-int binarysearch (int i, int j, int key)
+int binarysearchdown(int i, int j, int key)
 {
     int l=i,r=j;
+    int kq=-1;
     while(l<=r)
     {
         int mid=(l+r)/2;
         if(A[mid]==key)
-        return mid;
+        {
+            kq=mid;
+            r=mid-1;
+        }
         else if(A[mid]>key)
         {
             r=mid-1;
         }
         else l=mid+1;
     }
-    return -1;
+    return kq;
+}
+int binarysearchup (int i, int j, int key)
+{
+    int l=i,r=j;
+    int kq=-1;
+    while(l<=r)
+    {
+        int mid=(l+r)/2;
+        if(A[mid]==key)
+        {
+            kq=mid;
+            l=mid+1;
+        }
+        else if(A[mid]>key)
+        {
+            r=mid-1;
+        }
+        else l=mid+1;
+    }
+    return kq;
 }
 int main()
 {
@@ -38,10 +62,9 @@ int main()
     for(int i=1;i<=n;i++)
     {
         key=x-A[i];
-        if(binarysearch(i+1,n,key)!=-1 && key>A[i])
-        {
-            dem++;
-        }
+        int vtd=binarysearchdown(i+1,n,key);
+        int vtc=binarysearchup(i+1,n,key);
+        if(vtd>0)dem=dem+vtc-vtd+1;
     }
     cout<<dem;
 }
