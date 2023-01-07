@@ -10,7 +10,8 @@ long long dem(int n)
     f[3]=4;
     f[4]=8;
     f[5]=16;
-    for (int i = 6; i <= n; i++)
+    f[6]=32;
+    for (int i = 7; i <= n; i++)
     {
         f[i]=(f[i-1]+f[i-2]+f[i-3]+f[i-4]+f[i-5]+f[i-6])%M;
     }
