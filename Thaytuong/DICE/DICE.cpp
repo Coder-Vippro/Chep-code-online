@@ -1,21 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
-void findWays(int N)
+long long n;
+long long f[10000001];
+long long M=1e9+7;
+long long dem(int n)
 {
-    int dp[N + 1];
-    dp[0] = 1;
-    for (int i = 1; i <= N; i++)
-        {
-            dp[i] = 0;
-            for (int j = 1; j <= 6; j++)
-            {
-                if (i - j >= 0)
-                {
-                        dp[i] = dp[i] + dp[i - j];    
-                }
-            }
-        }
-        cout << dp[N];
+    f[1]=1;
+    f[2]=2;
+    f[3]=4;
+    f[4]=8;
+    f[5]=16;
+    for (int i = 6; i <= n; i++)
+    {
+        f[i]=(f[i-1]+f[i-2]+f[i-3]+f[i-4]+f[i-5]+f[i-6])%M;
+    }
+    return f[n]%M;
 }
 int main()
 {
@@ -23,7 +22,7 @@ int main()
     freopen("DICE.OUT", "w", stdout);
     int n;
     cin>> n;
-    findWays(n);
+    cout<<dem(n);
     return 0;
-    //source code from https://www.geeksforgeeks.org/count-ways-to-obtain-given-sum-by-repeated-throws-of-a-dice/ 
+    
 }
