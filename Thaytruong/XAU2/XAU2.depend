@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1673250901 source:f:\chep-code-online\thaytruong\xau2\xau2.cpp
+	<iostream>
+	<string>
+	<cstdio>
+
