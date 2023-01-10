@@ -6,8 +6,8 @@ int f[10000001];
 int C[10000001];
 int main()
 {
-    freopen("COINS.INP","r",stdin);
-    freopen("COINS.OUT","w",stdout);
+    freopen("COINS3.INP","r",stdin);
+    freopen("COINS3.OUT","w",stdout);
     f[0]=0;
     int x,n;
     cin>>n>>x;

@@ -7,12 +7,13 @@ const int MOD=1e9+7;
 int main()
 {
 
-    freopen("MOVE.inp","r",stdin);
-    freopen("MOVE.out","w",stdout);
+    freopen("GRIDPATHS.inp","r",stdin);
+    freopen("GRIDPATHS.out","w",stdout);
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    cin>>n>>m;
+    cin>>n;
+    m=n;
     for(int i=1;i<=n;i++)
         {
             for(int j=1;j<=m;j++)
@@ -49,6 +50,6 @@ int main()
                 else f[i][j]=0;
             }
         }
-    cout<<f[n][m];
+    cout<<f[n][m]%MOD;
     return 0;
 }

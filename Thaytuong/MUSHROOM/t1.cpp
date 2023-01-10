@@ -44,3 +44,4 @@ int main()
         }
 
     cout<<f[n][m]-f1[n][m]-f2[n][m]-f3[n][m];
+}
